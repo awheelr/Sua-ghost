@@ -3,18 +3,18 @@ const Logger = require("../core/Logger.js");
 module.exports = client => {
     Logger.success("Discord", `Ready, Logged in as ${client.user.username}
     `);
-    client.user.setStatus(config.status);
+    client.user.setStatus(config.botStatus);
     client.user.setPresence({
         game: {
-            name: config.gamename,
-            type: config.gametype,
-            url: config.gameurl
+            name: config.botActivityMessage,
+            type: config.botActivityType,
+            url: config.twithlink
         }
     });
     if (client.user.setPresence) {
-        Logger.success("Discord", `\n\n\nstatus set to: ${config.status}`);
-        Logger.success("Discord", `\n\n\ngame name set to: ${config.gamename}`);
-        Logger.success("Discord", `\n\n\ngame type set to: ${config.gametype}`);
-        Logger.success("Discord", `\n\n\ngame url set to: ${config.gameurl}`);
+        Logger.success("Discord", `botStatus: ${config.botStatus}`);
+        Logger.success("Discord", `botActivityMessage: ${config.botActivityMessage}`);
+        Logger.success("Discord", `botActivityType: ${config.botActivityType}`);
+        Logger.success("Discord", `twithlink: ${config.twithlink}`);
     }
 };

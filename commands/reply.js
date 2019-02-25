@@ -6,6 +6,8 @@ exports.run = (client, message) => {
   let id = args[0];
   let text = args.slice(1).join(" ");
 
+  if (message.guild.id !== config.guildid) return message.channel.send("This is the wrong guild to be using this command.");
+  
   if (config.supportsystem === "false") return message.channel.send("Support System is not enabled.");
 
   if (message.channel.type === "dm") return message.author.send("You can't use this command in DM.");
