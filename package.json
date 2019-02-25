@@ -1,20 +1,25 @@
 {
-  "name": "support-bot",
+  "name": "sua-bot",
   "version": "1.0.0",
   "description": "Discord.js Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.4.0"
   },
   "author": "Austin W",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
     "discord.js": "^11.4.2",
-    "fs": "0.0.1-security",
+    "fs": "^0.0.2",
     "moment": "^2.24.0",
     "node-fetch": "^2.3.0",
     "nodemon": "^1.18.10",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "express": "^4.16.4"
   }
 }
