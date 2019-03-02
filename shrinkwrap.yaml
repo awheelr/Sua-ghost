@@ -4,6 +4,7 @@ dependencies:
   express: 4.16.4
   fs: 0.0.2
   moment: 2.24.0
+  moment-duration-format: 2.2.2
   node-fetch: 2.3.0
   nodemon: 1.18.10
   request: 2.88.0
@@ -1303,6 +1304,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
+  /moment-duration-format/2.2.2:
+    dev: false
+    resolution:
+      integrity: sha1-uVdhLeJgFsmtnrYIfAVFc+USd3k=
   /moment/2.24.0:
     dev: false
     resolution:
@@ -2185,6 +2190,7 @@ specifiers:
   express: ^4.16.4
   fs: ^0.0.2
   moment: ^2.24.0
+  moment-duration-format: ^2.2.2
   node-fetch: ^2.3.0
   nodemon: ^1.18.10
   request: ^2.88.0

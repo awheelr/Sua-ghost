@@ -3,6 +3,7 @@ exports.run = (client, message, args) => {
     if (message.channel.type === "dm") return message.author.send("You can't use this command in DM.");
 
     let staffRole = message.guild.roles.find(role => role.name === "Staff");
+    if (!staffRole) return message.channel.send("Staff Role doesn't exist in this guild.")
     if (!message.member.roles.has(staffRole.id)) return message.channel.send("You have invalid permissions.");
 
     message.channel.send(args.join(" "));
